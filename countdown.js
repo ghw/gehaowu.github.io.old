@@ -262,6 +262,8 @@
 
 	var data = [
 		{text: "距 2015 年注册会计师考试时间", time: new Date(2015, 10, 16).getTime()},
+		{text: "距 2015 年注册会计师考试时间", time: new Date(2015, 12, 31).getTime()},
+		{text: "距 2015 年注册会计师考试时间", time: new Date(2015, 10, 16).getTime()},
 	];
 
 	//title

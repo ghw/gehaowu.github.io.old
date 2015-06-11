@@ -1,0 +1,164 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+
+		<title>Tempo - Full Screen Background Coming Soon Template</title>
+		<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+		
+		<!-- To change the color scheme, change blue.css with green.css, orange.css, red.css, purple.css and pink.css -->
+		<link rel="stylesheet" href="colors/blue.css" type="text/css" media="screen" />
+	
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="js/supersized.3.2.7.js"></script>
+		<script type="text/javascript" src="js/supersized.shutter.js"></script>
+		<script type="text/javascript" src="js/jquery.countdown.js"></script>
+		<script type="text/javascript" src="js/jquery.contact.js"></script>
+		<script type="text/javascript" src="js/jquery.subscribe.js"></script>
+		
+		<script type="text/javascript" src="js/jquery.ui.core.min.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.widget.min.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.mouse.min.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.draggable.min.js"></script>		
+		
+		<script type="text/javascript" src="js/custom.js"></script>
+
+</head>
+<body>
+
+	<div id="wrapper">
+		<div id="container">
+		
+			<div id="progress"></div>					
+			
+			<ul class="top-buttons"> <!-- drag and toggle buttons-->
+				<li><a class="trigger">toggle me</a></li>
+				<li><a class="drag">drag me with your mouse</a></li>
+			</ul><!--end top-buttons-->
+			
+			<div id="totoggle">
+				<div id="infopage">
+					<div class="content">
+						<h2>Who we are</h2>
+						<p>Hi there! We`re <span>Tempo</span> and we make awesome stuff!</p>
+						<p>	We`re using the <a href="#">latest technologies</a> to create and deliver the projects, so come and work with us.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<h2>What we do</h2>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div><!--end content-->
+					
+					<ul class="buttons">
+						<li><a class="info">I show some info</a></li>
+						<li><a class="infocontact">I reveal the contact form</a></li>
+					</ul><!--end buttons-->	
+				</div><!--end infopage-->
+				
+				<div id="contactpage">
+					<div class="content">
+						<div class="one-half">
+							<h2>Get in touch with us</h2>
+							<p>We would love to hear about you. You can contact us either on email through the contact form.</p>
+							<p><span>mail:</span> contact@website.com</p>
+							<p><span>phone:</span> (0123) 456 789</p>
+							<p><span>address:</span> 1600 Amphitheatre Parkway Mountain View, California 94043, USA </p>
+						</div><!--end one-half-->
+						
+						<div class="one-half last cf">
+							<div id="contactform">
+								<div id="message"></div>
+								<form method="post" action="php/contact.php" name="cform" id="cform">
+									<input type="text" name="name" placeholder="Name" id="name" />
+									<input type="text" name="email" placeholder="Email" id="email" />
+									<textarea name="comments" placeholder="Message" id="comments"></textarea>					
+									<input type="submit" name="send" value="Send" id="submit" /> 
+								</form>
+							</div><!--end contactform-->
+						</div><!--end one-half-->
+					</div><!--end content-->
+					
+					<div class="clear"></div>
+					
+					<ul class="buttons">
+						<li><a class="contactinfo">I show some info</a></li>
+						<li><a class="contact">I reveal the contact form</a></li>
+					</ul><!--end buttons-->						
+				</div><!--end contactpage-->			
+			
+				<div id="homepage">
+					<a class="logo" href="#"><img src="images/logo.png" alt="logo" /></a>
+					<h1><span>Our Website is Coming Soon</span></h1>
+					
+					<div id="countdown"></div>	
+					
+					<div id="subscribe">
+						<div id="mesaj"></div>
+						<form method="post" action="php/subscribe.php" name="subscribeform" id="subscribeform">
+							<input type="text" name="email" placeholder="Enter your email address to get notified" id="subemail" />
+							<input type="submit" name="send" value="Subscribe" id="subsubmit" />
+						</form>
+					</div>
+					
+					<ul class="buttons">
+						<li><a class="info">I show some info</a></li>
+						<li><a class="contact">I reveal the contact form</a></li>
+					</ul><!--end buttons-->				
+				</div><!--end homepage-->
+			</div><!--end totoggle-->
+		</div><!--end container-->
+
+		<!--Thumbnail Navigation-->
+		<div id="prevthumb"></div>
+		<div id="nextthumb"></div>
+		
+		<!--Arrow Navigation-->
+		<div id="thumb-tray" class="load-item">
+			<div id="thumb-back"></div>
+			<div id="thumb-forward"></div>
+		</div>
+		
+		<!--Time Bar-->
+		<div id="progress-back" class="load-item">
+			<div id="progress-bar"></div>
+		</div>
+		
+		<!--Control Bar-->
+		<div id="controls-wrapper" class="load-item">
+			<div id="controls">
+				<div id="social">
+					<h4>We are social:</h4>
+					<ul>
+						<li><a class="rss" href="#"><img src="images/social/rss.png" alt="" /></a></li>
+						<li><a class="twitter" href="#"><img src="images/social/twitter.png" alt="" /></a></li>
+						<li><a class="facebook" href="#"><img src="images/social/facebook.png" alt="" /></a></li>
+						<li><a class="flickr" href="#"><img src="images/social/flickr.png" alt="" /></a></li>
+						<li><a class="google" href="#"><img src="images/social/google.png" alt="" /></a></li>
+				
+				<!-- you can add more social buttons from below for skype, stumbleupon, vimeo, dribbble, forrst -->
+				
+				<!--	<li><a class="skype" href="#"><img src="images/social/skype.png" alt="" /></a></li>
+						<li><a class="stumbleupon" href="#"><img src="images/social/stumbleupon.png" alt="" /></a></li>
+						<li><a class="vimeo" href="#"><img src="images/social/vimeo.png" alt="" /></a></li>
+						<li><a class="dribbble" href="#"><img src="images/social/dribbble.png" alt="" /></a></li>
+						<li><a class="forrst" href="#"><img src="images/social/forrst.png" alt="" /></a></li>
+				-->
+					</ul>
+				</div><!--end social-->
+				
+				<div class="centered-controls">
+					<a id="prevslide" class="load-item"><img src="images/back.png" alt="" /></a>
+					<a id="play-button"><img id="pauseplay" src="images/pause.png" alt="" /></a>
+					<a id="nextslide" class="load-item"><img src="images/forward.png" alt="" /></a>
+				</div><!--end centered-controls-->			
+				
+				<!--Thumb Tray button(the button from the bottom-right area)-->
+				<a id="tray-button"><img id="tray-arrow" src="images/button-tray-up.png" alt="" /></a>
+				
+			</div><!--end controls-->
+		</div><!--end controls-wrapper-->
+	</div><!--end wrapper-->
+	
+	<script type="text/javascript" src="js/jquery.placeholder.js"></script>	<!-- placeholder html5 tag support for IE and Old Browsers -->
+	
+</body>
+</html>

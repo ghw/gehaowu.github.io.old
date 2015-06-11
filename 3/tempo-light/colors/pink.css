@@ -1,0 +1,27 @@
+a:hover {
+	color:#de52b4;
+}
+#infopage span, #contactpage span {
+	color:#de52b4;
+}
+.item p {
+	color:#de52b4;
+}
+#tray-button:hover {
+	background:#de52b4;
+}
+#progress-bar {
+    background: #de52b4;
+}
+.centered-controls a:hover {
+	background:#de52b4;
+}	
+#social ul li:hover {
+	background:#de52b4;
+}
+input[type="submit"] {
+	background:#de52b4;
+}
+input[type="submit"]:hover {
+	background:#ff6fd4;
+}
