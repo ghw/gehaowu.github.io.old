@@ -9,17 +9,21 @@ $(document).ready(function() {
 
 
 // cowntdown function. Set the date by modifying the date in next line (June 1, 2012 00:00:00):
-	var austDay = new Date("June 1, 2020 00:00:00");
+/*	var austDay = new Date("June 1, 2020 00:00:00");
 		$('#countdown').countdown({until: austDay, layout: '<div class="item"><p>{dn}</p> {dl}<div class="lines"></div></div> <div class="item"><p>{hn}</p> {hl}<div class="lines"></div></div> <div class="item"><p>{mn}</p> {ml}<div class="lines"></div></div> <div class="item"><p>{sn}</p> {sl}</div>'});
 		$('#year').text(austDay.getFullYear());
 			
+*/
+	var austDay = new Date("June 1, 2020 00:00:00");
+		$('#countdown').countdown({until: austDay, layout: '<div class="item"><p><a class="facebook" href="#"><img src="images/social/facebook.png" alt="" /></a></p><div class="lines"></div></div> <div class="item"><p><a class="google" href="#"><img src="images/social/google.png" alt="" /></a></p><div class="lines"></div></div> <div class="item"><p><a class="flickr" href="#"><img src="images/social/flickr.png" alt="" /></a></p><div class="lines"></div></div>'});
+		$('#year').text(austDay.getFullYear());
 
 // toggle function
 	$('a.trigger').click(function(){
 		if( ! $(this).hasClass('active')){
 			$("#totoggle").slideToggle("slow");
 			$(this).addClass('active');
-			$('#container').append('<div class="text">Tempo - Full Screen Coming Soon Template</div>').show('slow');
+			$('#container').append('<div class="text">Welcome to Ge, Haowu s Homepage!</div>').show('slow');
 		} else {
 		$("#totoggle").slideToggle("slow");
 			$(this).removeClass('active');
@@ -60,7 +64,7 @@ $(document).ready(function() {
 		}
 		
 //run from home to info
-	$(".info").click(function(){infopage()});	
+	$(".info").click(function(){infopage()});
 
 
 // from home to contact
