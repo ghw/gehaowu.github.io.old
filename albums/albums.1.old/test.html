@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery nanoGallery slideshow test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;" />
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="jquery.nanogallery.js"></script> 
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/nanogallery/5.5.3/css/nanogallery.min.css' type='text/css' />
+    <script>
+        $(document).ready(function () {
+            $("#startlink").click(function (e) {
+
+                $("#gallery").nanoGallery({
+                    openOnStart: "pipo/1",
+                    slideshowAutoStart: true,
+                    colorSchemeViewer: "dark",
+                    viewerToolbar: {standard: "previousButton, pageCounter, nextButton, playPauseButton, label"},
+                });
+            });
+        });
+</script>
+</head>
+<body>
+    <a id="startlink" href="javascript:void(0)" style="margin-bottom: 40px;">run slide show</a>
+	<div id="gallery">
+            <a href="http://commandostore.net/art/artworks/890.jpg" data-ngalbumid="0" data-ngid="pipo" data-ngdesc="Dismal Sport (1929)" />
+            <a href="http://commandostore.net/art/artworks/890.jpg" data-ngalbumid="pipo" data-ngid="1" data-ngdesc="Dismal Sport (1929)" />
+            <a href="http://commandostore.net/art/artworks/869.jpg" data-ngalbumid="pipo" data-ngid="2" data-ngdesc="The Enigma of Desire (1929)"/>
+            <a href="http://commandostore.net/art/artworks/71.jpg" data-ngalbumid="pipo" data-ngid="3" data-ngdesc="The Persistence of Memory (1931)"/>
+            <a href="http://commandostore.net/art/artworks/67.jpg" data-ngalbumid="pipo" data-ngid="4" data-ngdesc="Autumnal Cannibalism (1936)"/>
+           
+
+    </div>	
+</body>
+</html>
