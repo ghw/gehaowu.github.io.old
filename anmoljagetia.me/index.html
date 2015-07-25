@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="img/icon.png">
+<meta name="description" content="">
+<meta name="keywords" content="" />
+<meta name="author" content="">
+
+<title>Anmol Jagetia's Homepage</title>
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Main style sheet including CSS rules from MorphText.CSS, animate.CSS and grid.CSS-->
+<link href="css/style.css" rel="stylesheet">
+
+
+<!-- Google Webfont -->
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body style="display:none;">
+<section id="home" class="">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-lg-8 col-lg-offset-2">
+        <div class="intro">
+          <div class="center-block"><img class="img-responsive center-block logo fadeInDown animated" src="img/icon.png" height="150" width="150"/></div>
+          <h2 class="headspc fadeInDown animated">Hello! My name is Anmol&nbsp;Jagetia.</h2>
+          <div class="title-accent-dark"></div>
+          <p class="copyspc">
+          I am a <br /><span id="js-rotating" style="font-size: 24px; color:#EC195C; padding-left :10px"> Student., Google Student Ambassador., Programmer., Web Developer., Newbie Designer., Free Thinker., Guitarist.</span>
+          <!-- I am a third year undergraduate student at IIIT Allahabad, where I am presently the Google Student Ambassador. I am majoring in Information Technology. I write code. I am a newbie designer, a guitarist, a free thinker and a GSoC aspirant. Contact me -->
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container fadeInDown animated">
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-lg-8 col-lg-offset-2">
+        <div class="center-block socialfoot" id="socialButtons">
+        <a href="mailto:hello@anmoljagetia.me"><img class="socialicon social-fade" src="img/social/email.svg"/></a> 
+        <a href="http://blog.anmoljagetia.me"><img class="socialicon social-fade" src="img/social/blog.svg"/></a> 
+        <a href="http://www.github.com/anmoljagetia" target="_blank"><img class="socialicon social-fade" src="img/social/github.svg"/></a>  
+        <a href="doc/resume.pdf"><img class="socialicon social-fade" src="img/social/curriculum.svg"/></a>
+        <a href="https://in.linkedin.com/pub/anmol-jagetia/8a/44a/973" target="_blank"><img class="socialicon social-fade" src="img/social/linkedin.svg"/></a>
+        <a href="http://www.facebook.com/anmol.jagetia" target="_blank"><img class="socialicon social-fade" src="img/social/facebook.svg"/></a>
+        <a href="http://www.plus.google.com/anmoljagetia" target="_blank"><img class="socialicon social-fade" src="img/social/gplus.svg"/></a> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-lg-8 col-lg-offset-2">
+<!--         <div class="center-block socialfoot"> 
+        <a href="http://www.linkedin.com/in/wrsly/" target="_blank"><img class="socialicon social-fade" src="img/social/linkedin.svg"/></a> <a href="http://www.vimeo.com/wsly" target="_blank"><img class="socialicon social-fade" src="img/social/vimeo.svg"/></a> <a href="http://www.behance.net/wes_sly" target="_blank"><img class="socialicon social-fade" src="img/social/behance.svg"/></a> <a href="http://www.artstation.com/artist/wsly" target="_blank"><img class="socialicon social-fade" src="img/social/artstation.svg"/></a> </div> -->
+        <p>Coded with ❤ by Anmol Jagetia | © 2015</p>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="js/jquery.min.js"></script> 
+<script src="js/morphext.min.js"></script>
+<script src="js/bootstrap.min.js"></script> 
+<script type="text/javascript">
+  $(document).ready(function() {
+      $('body').show();
+      $("#js-rotating").Morphext({
+          // The [in] animation type. Refer to Animate.css for a list of available animations.
+          animation: "flipInX",
+          // An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
+          separator: ",",
+          // The delay between the changing of each phrase in milliseconds.
+          speed: 2500
+      });
+  });
+</script>
+</body>
+</html>
