@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+    <title>File not found &middot; Ge Haowu's Personal Website!</title>
+    <style type="text/css" media="screen">
+      body, html {
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+        background: #333;
+        color: #fff;
+        text-align: center;
+        font: 13px/1.6 "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+      }
+
+      .wrapper {
+        position: absolute;
+        top: 40%;
+        height: 150px;
+        left: 0;
+        right: 0;
+        width: 100%;
+      }
+
+      h3 {
+        margin: 0;
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      p {
+        color: #ccc;
+      }
+
+      .brand-logo-wordmark {
+        display: inline-block;
+      }
+
+     .mobile-404-error-number {
+       font-size: 100px;
+       font-weight: bold;
+       margin: 0 8px 20px;
+       line-height: 0;
+     }
+
+     .mobile-404-octocat-wrapper {
+       position: relative;
+       display: inline-block;
+       height: 71px;
+       width: 71px;
+       border-radius: 45px;
+       margin: 0 8px;
+
+       /*
+        * Because the octocat becomes transparent we need a layer,
+        * matching the background, to go in front of the pull cord,
+        * so that it isn't seen before the octocat opacity is 1.
+        */
+       background: #333;
+     }
+
+     .mobile-404-octocat-wrapper:after {
+       content: ""; display: block;
+       position: absolute;
+       width: 4px;
+       height: 4px;
+       border-radius: 4px;
+       background: #fff;
+       z-index: -2;
+       top: 58px;
+       left: 45px;
+       vertical-align: baseline;
+       box-shadow: 0 4px 0 #fff, 0 8px 0 #fff, 0 12px 0 #fff, 0 16px 0 #fff, 0 20px 0 #fff;
+
+       -webkit-animation-name: pull-string;
+       -webkit-animation-duration: .75s;
+       -webkit-animation-fill-mode: forwards;
+       -webkit-animation-delay: .5s;
+       animation-name: pull-string;
+       animation-duration: .75s;
+       animation-fill-mode: forwards;
+       animation-delay: .5s;
+
+     }
+
+     svg {
+       opacity: .25;
+       z-index: 999;
+       position: relative;
+     }
+
+      @-webkit-keyframes lightbulb {
+        0%, 8%, 14% {
+          opacity: .1
+        }
+        0%, 10%, 25% {
+          opacity: .25;
+        }
+        5%, 30%, 50%, 70% {
+          opacity: .5;
+        }
+        16%, 60%, 80% {
+          opacity: .75;
+        }
+        90% {
+          opacity: .8;
+        }
+        94% {
+          opacity: .5
+        }
+        100% {
+          opacity: 1;
+          stdDeviation: 0;
+        }
+      }
+
+    .mobile-404-lightbulb-ani {
+      -webkit-animation-name: lightbulb;
+      -webkit-animation-duration: 2.5s;
+      -webkit-animation-fill-mode: forwards;
+      animation-name: lightbulb;
+      animation-duration: 2.5s;
+      animation-fill-mode: forwards;
+      -webkit-animation-delay: 1.3s;
+      animation-delay: 1.3s;
+    }
+
+    @-webkit-keyframes pull-string {
+      50% {
+        -webkit-transform: translate3d(0, 12px, 0);
+        transform: translate3d(0, 12px, 0);
+      }
+      75% {
+        -webkit-transform: none;
+        transform: none;
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="mobile-404-error-number">
+        4<span class="mobile-404-octocat-wrapper">
+          <svg class="mobile-404-lightbulb-ani" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+             viewBox="0 0 132.1 129.8" enable-background="new 0 0 132.1 129.8" width="72" xml:space="preserve">
+              <path fill="#fff" d=" M 64.35 0.00 L 67.60 0.00 C 84.34 0.45 100.91 7.35 112.63 19.36 C 124.63 31.09 131.55 47.63 132.00 64.36 L 132.00 67.62 C 131.55 83.64 125.24 99.52 114.12 111.11 C 103.94 121.96 89.94 129.70 75.01 131.10 L 75.79 132.00 L 70.08 132.00 C 71.92 131.53 74.28 132.16 75.63 130.46 C 77.27 130.08 78.92 129.72 80.59 129.45 C 89.79 125.90 98.73 120.75 104.84 112.84 C 115.51 100.00 119.75 81.94 115.16 65.79 C 114.18 61.82 111.54 58.21 112.09 53.95 C 111.95 51.56 113.09 49.40 114.00 47.27 C 115.46 44.08 116.40 40.67 117.74 37.43 C 118.36 33.16 116.63 28.83 112.56 27.00 C 105.94 25.66 99.94 29.49 94.06 31.89 C 91.63 32.97 88.73 32.92 86.36 31.71 C 80.26 28.99 73.65 27.54 67.01 26.95 C 58.85 26.91 51.00 29.56 43.42 32.34 C 39.57 33.68 36.22 31.07 32.83 29.72 C 29.47 28.15 25.83 27.35 22.30 26.26 C 20.25 26.99 18.25 27.83 16.27 28.73 C 15.59 29.98 14.90 31.23 14.21 32.47 C 14.14 35.51 14.34 38.54 15.19 41.46 C 17.08 46.66 20.72 51.58 19.80 57.38 C 19.15 59.00 18.53 60.63 17.89 62.25 C 14.31 72.15 13.97 83.24 16.83 93.35 C 18.67 99.37 21.29 105.13 24.93 110.27 C 32.91 121.66 45.87 128.79 59.33 131.52 C 43.84 130.26 29.03 122.88 18.37 111.63 C 6.95 99.98 0.44 83.86 0.00 67.60 L 0.00 64.38 C 0.44 47.64 7.36 31.09 19.37 19.36 C 31.09 7.36 47.63 0.46 64.35 0.00 Z">
+              </path>
+          </svg>
+        </span>4
+      </div>
+      <h3>Didn’t find anything here!</h3>
+        <p>Go to » <a href="//www.gehaowu.com/">Home</a> | <a href="//www.gehaowu.com/albums/">Albums</a> | <a href="//www.gehaowu.com/resume/">Resume</a> | <a href="//www.gehaowu.com/Notes/">Notes</a><br>Welcome to Ge Haowu's Personal Website!</p>
+    </div>
+  </html>
